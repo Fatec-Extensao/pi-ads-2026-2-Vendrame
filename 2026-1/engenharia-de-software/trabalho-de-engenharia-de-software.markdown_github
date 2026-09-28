@@ -1,0 +1,254 @@
+**SISTEMA WEB PARA GESTÃO DE PESQUISAS POR QUESTIONÁRIOS**
+
+**1. Identificação do Grupo e Tema**
+
+Alunos: Richard, Matheus Soares e Gustavo William.
+
+Tema: Sistema Web para Gestão de Pesquisas por Questionários.
+
+**2. Estudo de Caso**
+
+O projeto consiste no desenvolvimento de uma plataforma web voltada para
+a criação, aplicação e análise de pesquisas institucionais. O foco
+principal é garantir que as instituições possam coletar dados de
+diferentes grupos (como alunos, professores e colaboradores) de forma
+organizada e segura. O grande diferencial do sistema é a garantia do
+anonimato: o acesso à pesquisa é feito por meio de senhas aleatórias
+geradas em lotes, que não identificam o respondente e são descartadas
+após o uso único. Além da coleta, o sistema deve fornecer ferramentas
+administrativas para monitorar a participação em tempo real e gerar
+relatórios estatísticos com gráficos para análise de resultados.
+
+**3. Requisitos Funcionais**
+
+1\. Cadastrar pesquisas: Permitir a criação de pesquisas com título,
+descrição e período de validade.
+
+2\. Gerenciar categorias: Cadastrar diferentes perfis de participantes
+(Ex: Alunos, Docentes).
+
+3\. Criar questionários: Elaborar perguntas específicas para cada
+categoria de participante.
+
+4\. Definir tipos de questões: Suportar múltipla escolha, escalas (1 a
+5) e respostas abertas.
+
+5\. Gerar senhas anônimas: Criar lotes de senhas aleatórias por
+categoria para distribuição.
+
+6\. Aplicar questionário via senha: Validar o acesso do usuário apenas
+mediante senha válida.
+
+7\. Registrar respostas: Gravar os dados coletados de forma segura no
+banco de dados.
+
+8\. Impedir reutilização: Marcar a senha como utilizada e bloquear novos
+acessos com o mesmo código.
+
+9\. Monitorar participação: Exibir dashboard com total de senhas geradas
+e respostas recebidas.
+
+10\. Gerar relatórios: Criar visões analíticas com gráficos e exportação
+para PDF/CSV.
+
+11\. Exportação de Senhas: Permitir exportar as senhas geradas em PDF ou
+CSV.
+
+**4. Requisitos Não Funcionais**
+
+Usabilidade: Interface amigável, intuitiva e responsiva.
+
+Segurança: Criptografia de senhas e dados sensíveis.
+
+Performance: Suporte a múltiplos acessos simultâneos.
+
+Portabilidade: Compatível com navegadores modernos (Chrome, Firefox,
+Edge).
+
+**5. Atores do Sistema**
+
+Administrador: Responsável por gerenciar pesquisas, perguntas, senhas e
+relatórios.
+
+Respondente: Usuário que acessa e responde a pesquisa de forma anônima.
+
+Sistema: Responsável por validações, controle e processamento de dados.
+
+**6. User Stories**
+
+Como Administrador, quero gerar senhas aleatórias para distribuição
+anônima.
+
+Como Administrador, quero visualizar gráficos em tempo real para
+monitorar respostas.
+
+Como Respondente, quero acessar o sistema apenas com senha para manter
+anonimato.
+
+Como Respondente, quero uma interface responsiva para responder via
+celular.
+
+Como Administrador, quero exportar resultados em CSV para análises
+externas.
+
+Alunos
+
+Richard de Oliveira Barra Junior
+
+Matheus Soares Gomes
+
+Gustavo Willian Godoy da Silva
+
+# 
+
+# Front-end
+
+# Front-end é a parte visual do sistema, ou seja, aquilo que o usuário vê e interage.
+
+**Principais linguagens:**
+
+**HTML**  
+Usado para estruturar a página, como textos, imagens, botões,
+formulários e links.
+
+**CSS**  
+Usado para estilizar a página, definindo cores, fontes, tamanhos,
+espaçamentos e layout.
+
+**JavaScript**  
+Usado para deixar a página interativa, como menus, animações, validação
+de formulários e comunicação com o servidor.
+
+Também são muito usados frameworks e bibliotecas como:
+
+**React**  
+Biblioteca JavaScript para criar interfaces modernas.
+
+**Vue.js**  
+Framework JavaScript simples e bastante usado em aplicações web.
+
+**Angular**  
+Framework completo para criação de sistemas web maiores.
+
+------------------------------------------------------------------------
+
+# Back-end
+
+# Back-end é a parte que funciona por trás do sistema, cuidando de banco de dados, login, regras de negócio, pagamentos e segurança.
+
+**Principais linguagens:**
+
+**PHP**  
+Muito usado em sites e sistemas web, principalmente com MySQL.
+
+**JavaScript com Node.js**  
+Permite usar JavaScript também no servidor.
+
+**Python**  
+Muito usado em sistemas web, automação, inteligência artificial e APIs.
+
+**Java**  
+Muito usado em sistemas grandes, empresariais e aplicações robustas.
+
+**C#**  
+Muito usado com a plataforma .NET, principalmente em sistemas
+corporativos.
+
+**Ruby**  
+Usado com o framework Ruby on Rails para desenvolvimento web rápido.
+
+**Go**  
+Linguagem moderna, rápida e bastante usada em APIs e sistemas de alta
+performance.
+
+FATEC LINS
+
+Análise e Desenvolvimento de Sistemas
+
+Projeto Integrador I
+
+Relatório Técnico: Análise de Sistemas de Questionários
+
+Richard de Oliveira Barra Junior, Matheus Soares e Gustavo William.
+
+2026
+
+1.  Introdução
+
+Este relatório apresenta uma análise comparativa entre sistemas de
+questionários consolidados no mercado e o Sistema Web para Gestão de
+Pesquisas proposto para o Projeto Integrador I. O foco é identificar
+boas práticas de usabilidade, segurança e funcionalidades que possam
+enriquecer o desenvolvimento da solução institucional.
+
+1.  Metodologia da Pesquisa
+
+A pesquisa foi realizada através de análise exploratória e técnica de
+três plataformas: Google Forms, SurveyMonkey e LimeSurvey. Foram
+avaliados critérios de arquitetura, tipos de questões, segurança e a
+aderência ao modelo de senhas anônimas do projeto proposto.
+
+1.  Descrição dos Sistemas Analisados
+
+Google Forms: Ferramenta gratuita baseada em nuvem com foco em
+simplicidade e integração.
+
+SurveyMonkey: Plataforma profissional de nível corporativo com análises
+estatísticas avançadas.
+
+LimeSurvey: Solução open source robusta, amplamente utilizada para fins
+acadêmicos e pesquisas que exigem alto controle de dados.
+
+1.  Análise Individual
+
+    1.  Google Forms
+
+Informações Gerais: Gratuito, empresa Google.
+
+Características Funcionais: Criação de questionários, múltiplos tipos de
+questões e geração de relatórios simples com gráficos.
+
+Características Técnicas: Plataforma Web/Mobile, arquitetura de
+microsserviços, integração nativa com planilhas.
+
+Segurança: Controle de acesso por conta Google, porém o anonimato
+depende da configuração manual do criador.
+
+1.  SurveyMonkey
+
+Informações Gerais: Modelo Pago/Freemium.
+
+Características Funcionais: Dashboard avançado, lógica de ramificação e
+múltiplas categorias de usuários.
+
+Características Técnicas: Disponibilidade de API robusta para
+integração.
+
+Diferenciais: Recursos avançados de análise de sentimento e modelos
+prontos.
+
+1.  LimeSurvey
+
+Informações Gerais: Open source.
+
+Características Técnicas: Backend em PHP e banco de dados
+MySQL/PostgreSQL.
+
+Segurança: Sistema de tokens para respostas únicas.
+
+Diferenciais: Controle total sobre a privacidade dos dados.
+
+1.  Análise Crítica
+
+O sistema proposto apresenta funcionalidades semelhantes às plataformas
+analisadas, com destaque para o diferencial de geração de senhas
+anônimas por categoria.
+
+6\. Conclusão
+
+O sistema é viável e atende à demanda institucional com foco em
+anonimato e controle.
+
+7\. Referências forms.google.com surveymonkey.com limesurvey.org
+
+Documentação do Projeto Integrador I - Fatec Lins
